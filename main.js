@@ -1,5 +1,8 @@
 let punctuationMarks = ['.', ',', '!', ':', ';'];
+
 let punctuationRegex = new RegExp('/' + punctuationMarks.join('|'), 'g');
+
+setPunctuationMarksText();
 
 function randomizePunctuation(){
     let inputText = getInput();
@@ -20,4 +23,9 @@ function randomize(inputText){
 
 function getRandomMark(){
     return punctuationMarks[Math.floor(Math.random() * punctuationMarks.length)];
+}
+
+function setPunctuationMarksText(){
+    document.getElementById('punctuation_marks_list').innerText = punctuationMarks.join('');
+
 }
