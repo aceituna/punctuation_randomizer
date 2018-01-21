@@ -1,4 +1,4 @@
-let punctuationMarks = ['.', ',', '!', ':', ';'];
+let punctuationMarks = ['.', ',', '!', ':', ';', '/?' ];
 
 let punctuationRegex = new RegExp('/' + punctuationMarks.join('|'), 'g');
 
