@@ -3,34 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Punctuation randomizer</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
 <div class="container">
-    <div>Punctuation marks: <span id="punctuation_marks_list"></span></div>
-    <div><span>Paste your text here </span></div>
-    <div>
 
-        <textarea id="input_text" rows="20" style="width:40%"> </textarea>
-        <span style="width:15%">
-            <button type="button" onclick="randomizePunctuation()"
-                class="margin:auto" >Randomize
+    <div class="punctuation_marks_list_header">Punctuation marks</div>
+    <div class="input_header">Paste your text here</div>
+    <div class="button_header"></div>
+    <div class="output_header"></div>
+
+
+    <div class="punctuation_marks"><span id="punctuation_marks_list"></span></div>
+    <div class="input"><textarea id="input_text" rows="20"> </textarea></div>
+    <div class="button">
+        <button type="button" onclick="randomizePunctuation()"
+                class="margin:auto">Randomize
         </button>
-
-        </span>
-
-
-        <textarea id="output_text" rows="20" style="width:40%"></textarea>
     </div>
+    <div class="output"><textarea id="output_text" rows="20"></textarea></div>
+
+
 </div>
 </body>
 </html>
 <script src="main.js"></script>
-<style>
-    textarea{
-     width:100%;
-     font-size:14px;
-     }
-
-
-
-</style>
