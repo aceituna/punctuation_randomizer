@@ -8,17 +8,17 @@
 <body>
 <div class="container">
 
-    <div class="punctuation_marks_list_header">Punctuation marks</div>
-    <div class="input_header">Paste your text here</div>
-    <div class="button_header"></div>
-    <div class="output_header"></div>
 
 
-    <div class="punctuation_marks"><span id="punctuation_marks_list"></span></div>
-    <div class="input"><textarea id="input_text" rows="20"> </textarea></div>
+    <div class="punctuation_marks">
+        <ul id="punctuation_marks_list">
+
+    </ul>
+    </div>
+    <div class="input"><textarea id="input_text" rows="20" placeholder="Your text here"> </textarea></div>
     <div class="button">
         <button type="button" onclick="randomizePunctuation()"
-                class="margin:auto">Randomize
+                style="margin:auto">Randomize
         </button>
     </div>
     <div class="output"><textarea id="output_text" rows="20"></textarea></div>
